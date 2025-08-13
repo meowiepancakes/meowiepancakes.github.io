@@ -2,137 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Name</title>
+    <title>My Guns.lol-Style Page</title>
     <style>
-        /* Make background GIF fill screen */
+        /* Full-page GIF background */
         body {
             margin: 0;
             padding: 0;
-            height: 100vh;
-            background: url('https://drive.google.com/uc?export=download&id=154jucy6g3520C4jCTN4pRNnM5mIirrbz
-') no-repeat center center fixed;
+            background: url('https://drive.google.com/uc?export=download&id=154jucy6g3520C4jCTN4pRNnM5mIirrbz') no-repeat center center fixed;
             background-size: cover;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             color: white;
             text-align: center;
         }
 
-        /* Overlay to darken background so text is readable */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.5);
-            z-index: 0;
+        /* Semi-transparent overlay for readability */
+        .overlay {
+            background-color: rgba(0,0,0,0.5);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
         }
 
-        /* Center content */
-        .container {
-            position: relative;
-            z-index: 1;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
+        /* Profile picture styling */
         .profile-pic {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             border: 3px solid white;
-            object-fit: cover;
+            margin-bottom: 20px;
         }
 
+        /* Bio text */
         .bio {
-            margin: 20px auto;
-            max-width: 400px;
+            font-size: 20px;
+            margin-bottom: 30px;
         }
 
-        .social-links img {
-            width: 50px;
-            height: 50px;
-            margin: 10px;
-            transition: transform 0.2s;
-        }
-
-        .social-links img:hover {
-            transform: scale(1.2);
-        }
-
-        /* Optional: style for bio */
-        .bio p {
-            font-size: 18px;
-        }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <!-- Profile Picture -->
-    <img src="https://drive.google.com/uc?export=download&id=1uqq-IBNYHa7FBS-bVAJBbt3eDdRZAzjV
-" alt="Profile Picture" class="profile-pic">
-
-    <!-- Bio -->
-    <div class="bio">
-        <p>haiii :3 i made this for fun mwah >_< </p>
-        <p>ISFP - CST</p>
-    </div>
-
-    <!-- Social Links -->
-    <div class="social-links">
-        <a href="https://www.instagram.com/boothillsbootylicker/?__pwa=1" target="_blank">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
-        </a>
-        <a href="https://www.tiktok.com/@_koo1aidd?_t=ZT-8yq2c7tLrig&_r=1" target="_blank">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok.png" alt="TikTok">
-        </a>
-        <a href="https://www.roblox.com/users/3662401668/profile" target="_blank">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/roblox.png" alt="Roblox">
-        </a>
-        <!-- Add more social links if you want -->
-    </div>
-</div>
-
-<!-- Background Music -->
-<audio autoplay loop>
-    <source src="https://drive.google.com/uc?export=download&id=1bhNnBASJRvGPwCQaMGyeZxrlaWUEXIWl
-" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Page</title>
-    <style>
-        body {
-            background: url('https://drive.google.com/uc?export=download&id=154jucy6g3520C4jCTN4pRNnM5mIirrbz') no-repeat center center fixed;
-            background-size: cover;
-            text-align: center;
+        /* Social links styling */
+        .socials a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
             color: white;
-            font-family: Arial, sans-serif;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
         }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
+
+        .socials a:hover {
+            background: rgba(255,255,255,0.5);
+        }
+
+        /* Footer spacing for audio */
+        footer {
             margin-top: 50px;
         }
     </style>
 </head>
 <body>
-    <img class="profile-pic" src="https://drive.google.com/uc?export=download&id=1uqq-IBNYHa7FBS-bVAJBbt3eDdRZAzjV" alt="Profile Picture">
+    <div class="overlay">
+        <!-- Profile Picture -->
+        <img class="profile-pic" src="https://drive.google.com/uc?export=download&id=1uqq-IBNYHa7FBS-bVAJBbt3eDdRZAzjV" alt="Profile Picture">
 
-    <h1>My Bio Here</h1>
-    <p>Links: Instagram | TikTok | Roblox</p>
+        <!-- Bio -->
+        <div class="bio">
+            <h1>Welcome to My Page!</h1>
+            <p>Just a little page with my socials, music, and vibes. 💖</p>
+        </div>
 
-    <audio autoplay loop>
-        <source src="https://drive.google.com/uc?export=download&id=1bhNnBASJRvGPwCQaMGyeZxrlaWUEXIWl" type="audio/mpeg">
-    </audio>
+        <!-- Social Links -->
+        <div class="socials">
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
+            <a href="https://www.roblox.com/" target="_blank">Roblox</a>
+            <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+        </div>
+
+        <!-- Background Music -->
+        <footer>
+            <audio autoplay loop>
+                <source src="https://drive.google.com/uc?export=download&id=1bhNnBASJRvGPwCQaMGyeZxrlaWUEXIWl" type="audio/mpeg">
+            </audio>
+        </footer>
+    </div>
 </body>
 </html>
