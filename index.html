@@ -1,48 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Links</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Name</title>
     <style>
+        /* Make background GIF fill screen */
         body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('file:///C:/Users/panda/Downloads/download%20(5).gif') no-repeat center center fixed;
+            background-size: cover;
             font-family: Arial, sans-serif;
-            background: #111;
             color: white;
             text-align: center;
-            margin: 0;
         }
-        img {
+
+        /* Overlay to darken background so text is readable */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 0;
+        }
+
+        /* Center content */
+        .container {
+            position: relative;
+            z-index: 1;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            width: 120px;
-            margin-top: 40px;
+            border: 3px solid white;
+            object-fit: cover;
         }
-        h1 {
-            font-size: 24px;
-            margin: 10px 0;
+
+        .bio {
+            margin: 20px auto;
+            max-width: 400px;
         }
-        .links a {
-            display: block;
-            background: #222;
-            padding: 12px;
-            margin: 10px auto;
-            width: 200px;
-            border-radius: 8px;
-            color: white;
-            text-decoration: none;
-            transition: background 0.3s;
+
+        .social-links img {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            transition: transform 0.2s;
         }
-        .links a:hover {
-            background: #444;
+
+        .social-links img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Optional: style for bio */
+        .bio p {
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <img src="https://via.placeholder.com/120" alt="Profile Picture">
-    <h1>My Name</h1>
-    <div class="links">
-        <a href="https://instagram.com/">Instagram</a>
-        <a href="https://twitter.com/">Twitter</a>
-        <a href="https://tiktok.com/">TikTok</a>
+
+<div class="container">
+    <!-- Profile Picture -->
+    <img src="file:///C:/Users/panda/Downloads/%23castorice%20%23honkaistarrail.jpg" alt="Profile Picture" class="profile-pic">
+
+    <!-- Bio -->
+    <div class="bio">
+        <p>haiii :3 i made this for fun mwah >_< </p>
+        <p>ISFP - CST</p>
     </div>
+
+    <!-- Social Links -->
+    <div class="social-links">
+        <a href="https://www.instagram.com/boothillsbootylicker/?__pwa=1" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@_koo1aidd?_t=ZT-8yq2c7tLrig&_r=1" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok.png" alt="TikTok">
+        </a>
+        <a href="https://www.roblox.com/users/3662401668/profile" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/roblox.png" alt="Roblox">
+        </a>
+        <!-- Add more social links if you want -->
+    </div>
+</div>
+
+<!-- Background Music -->
+<audio autoplay loop>
+    <source src="https://drive.google.com/uc?export=download&id=1bhNnBASJRvGPwCQaMGyeZxrlaWUEXIWl
+" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
 </body>
 </html>
